@@ -15,3 +15,10 @@ dependencies = [
     "streamlit",
     "pytest"
 ]
+
+[tool.flake8]
+max-line-length = 88
+ignore = E203, W503
+
+[tool.black]
+max-line-length = 88

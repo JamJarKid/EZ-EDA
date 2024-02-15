@@ -12,11 +12,13 @@ repos:
     hooks:
     -   id: black
     -   id: black-jupyter
--   repo: https://github.com/pycqa/flake8
+        args: [--line-length=88]
 
-    rev: 7.0.0  # pick a git hash / tag to point to
+-   repo: https://github.com/pycqa/flake8
+    rev: 7.0.0
     hooks:
     -   id: flake8
+        args: [ "max-line-length=88"]
 
 -   repo: https://github.com/pycqa/isort
     rev: 5.12.0

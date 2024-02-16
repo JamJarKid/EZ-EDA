@@ -29,4 +29,3 @@ repos:
     rev:  '8cd2d40'
     hooks:
     -   id: mypy
-        args: [--install-types --non-interactive]

@@ -1,4 +1,7 @@
+"""This module provides the main functionality of the application.
+
+Mainly used for debugging and developing the interface and functionality
+"""
 import streamlit as st
 
-st.title("sup dawg")
-st.write("gottem")
+st.write("sup dawg")

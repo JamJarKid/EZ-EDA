@@ -12,6 +12,9 @@ dependencies = [
     "numpy",
     "pandas",
     "streamlit",
+    "pandas-profiling", # if build fails update this to ydata assuming they have actually updated it -_-
+    "streamlit-pandas-profiling",
+
 ]
 
 [project.optional-dependencies]
@@ -19,7 +22,11 @@ dev = [
     "watchdog",
     "mypy",
     "pytest",
+    "pre-commit",
 ]
+
+[project.entry-points."console_scripts"]
+ez = "EZ_EDA.run:main"
 
 [tool.black]
 max-line-length = 88
